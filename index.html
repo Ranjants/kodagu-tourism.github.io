@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodagu Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: lightblue;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .places {
+            display: none;
+        }
+        .place {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Kodagu Tourism</h1>
+        <div class="buttons">
+            <button onclick="showDay('day1')">Day 1</button>
+            <button onclick="showDay('day2')">Day 2</button>
+        </div>
+        
+        <div id="day1" class="places">
+            <div class="place"><h2>Abbey Falls</h2><img src="abbey.jpg" alt="Abbey Falls"><p>A breathtaking waterfall near Madikeri, Abbey Falls is surrounded by lush greenery and coffee plantations. The falls cascade from a height of about 70 feet, creating a mesmerizing sight, especially during the monsoon season. A hanging bridge offers a perfect viewpoint for visitors.</p></div>
+            <div class="place"><h2>Raja's Seat</h2><img src="raja-seat.jpg" alt="Raja's Seat"><p>A famous viewpoint in Madikeri, Raja’s Seat offers panoramic views of mist-covered hills and valleys. It was once a favorite spot of Kodagu kings. The well-maintained garden, musical fountain, and golden sunsets make it a must-visit.</p></div>
+            <div class="place"><h2>Madikeri Fort</h2><img src="madikeri-fort-coorg.jpg" alt="Madikeri Fort"><p>Built in the 17th century, Madikeri Fort stands as a symbol of Coorg’s history. It houses a palace, a museum, a church, and two elephants at the entrance. The fort provides insights into the region's past with its unique blend of architectural styles.</p></div>
+            <div class="place"><h2>Omkareshwara Temple</h2><img src="omkeshwara.jpeg" alt="Omkareshwara Temple"><p>AThis 19th-century temple, dedicated to Lord Shiva, showcases a mix of Gothic and Islamic architecture. Built by King Lingarajendra II, it features a water tank with a central dome, adding to its serene ambiance.</p></div>
+            <div class="place"><h2>Mandalpatti</h2><img src="mandalpatti.jpeg" alt="Mandalpatti"><p>An offbeat hilltop destination, Mandalpatti is known for its stunning sunrise and sunset views. Located within Pushpagiri Wildlife Sanctuary, the spot is accessible via a thrilling jeep ride, making it an adventure lover’s paradise.</p></div>
+            <div class="place"><h2>Dubare Elephant Camp</h2><img src="dubare.jpeg" alt="Dubare Elephant Camp"><p>A must-visit for wildlife enthusiasts, Dubare Elephant Camp allows visitors to interact with elephants, watch their training sessions, and even bathe them. The camp, located along the Kaveri River, also offers river rafting experiences.</p></div>
+            <div class="place"><h2>Nisargadhama</h2><img src="nisargadhama.jpeg" alt="Nisargadhama"><p>A picturesque river island on the Kaveri, Nisargadhama is famous for its hanging bridge, deer park, and bamboo groves. It is an ideal picnic spot for nature lovers, offering activities like boating and elephant rides.</p></div>
+            <a href="1.html" class="btn">Back</a>
+        </div>
+        
+        <div id="day2" class="places">
+            <div class="place"><h2>Talakaveri</h2><img src="talakaveri.jpeg" alt="Talakaveri"><p>Talakaveri is the sacred origin of the Kaveri River, located on Brahmagiri Hills. Nearby, Bhagamandala is known for its temple complex where the rivers Kaveri, Kanike, and Sujyothi converge, making it a significant pilgrimage site.</p></div>
+            <div class="place"><h2>Bhagamandala</h2><img src="bagamanadala.jpeg" alt="Bhagamandala"><p>A holy pilgrimage site where three rivers meet. Offers a serene spiritual experience.</p></div>
+            <div class="place"><h2>Iruppu Falls</h2><img src="iruppu.jpeg" alt="Iruppu Falls"><p>A magnificent waterfall nestled in the Brahmagiri Range, Iruppu Falls is a famous trekking destination and a pilgrimage spot linked to Lord Rama. The falls offer a refreshing escape with their scenic beauty.</p></div>
+            <div class="place"><h2>Harangi Dam</h2><img src="harangi.jpeg" alt="Harangi Dam"><p>A serene location near Kushalnagar, Harangi Dam is built across the Harangi River, a tributary of the Kaveri. The reservoir and surrounding greenery make it an excellent picnic spot.</p></div>
+            <div class="place"><h2>Gaddige</h2><img src="gaddige.jpeg" alt="Gaddige"><p>A set of Indo-Islamic-style tombs built in memory of Kodava kings and generals. The structure features domes, minarets, and a peaceful garden, making it a great place to explore history.</p></div>
+            <div class="place"><h2>Chiklihole Dam</h2><img src="chiklihole.jpeg" alt="Chiklihole Dam"><p>A hidden gem near Kushalnagar, Chiklihole Reservoir is a peaceful retreat with a stunning semi-circular dam. It’s a great place for a quiet getaway, especially during sunrise or sunset.</p></div>
+            <a href="1.html" class="btn">Back</a>
+        </div>
+    </div>
+
+    <script>
+        function showDay(day) {
+            document.getElementById('day1').style.display = 'none';
+            document.getElementById('day2').style.display = 'none';
+            document.getElementById(day).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
